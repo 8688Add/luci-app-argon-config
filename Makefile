@@ -8,7 +8,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=luci-app-argon-config
 LUCI_PKGARCH:=all
-PKG_VERSION:=0.7
+PKG_VERSION:=0.8
 PKG_RELEASE:=beta
 
 include $(INCLUDE_DIR)/package.mk
@@ -19,7 +19,7 @@ define Package/luci-app-argon-config
 	SUBMENU:=3. Applications
 	TITLE:=LuCI page for Argon Config
 	PKGARCH:=all
-	DEPENDS:=
+	DEPENDS:=+luci-compat
 endef
 
 define Build/Prepare
